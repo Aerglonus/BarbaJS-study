@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Iosevka SS01 Medium;
+    src: url(/font/iosevka-ss01-medium.ttf);
+}
 html,
 body {
     background-color: #131213;
@@ -11,7 +15,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: rgb(204, 252, 253);
+    background-color: #5b21b6;
     width: 0%;
     height: 100%;
 }
@@ -26,7 +30,9 @@ body {
     z-index: 10;
     pointer-events: none;
 }
-
+h1{
+     font-family: Iosevka SS01 Medium;
+}
 /* .title {
     position: absolute;
     top: 38%;
@@ -44,13 +50,13 @@ body {
 }
 
 .button a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-family: Iosevka SS01 Medium;
     text-decoration: none;
     color: aliceblue;
     background-color: #131213;
     padding: 24px 40px;
     letter-spacing: 4px;
-    font-size: 10px;
+    font-size: 18px;
     font-weight: bold;
     border: 1px solid white;
 }
