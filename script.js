@@ -1,40 +1,36 @@
 /* It triggers the GSAP animation */
-PageTransition = () => {
+pageTransition = () => {
   var timeline = gsap.timeline();
-  timeline.to("header", {
-    zIndex: 1,
+  timeline.to(".loading-screen", {
+    duration: 0.5,
+    width: "100%",
+    left: "0%",
+  });
+  timeline.to(".loading-screen", {
+    duration: 0.5,
+    width: "100%",
+    left: "100%",
+
+    delay: 0.5,
   });
 
-  timeline.to(".page-transition", {
-    duration: 1,
-    height: "100%",
-    x: "0%",
-  });
-  timeline.to(".page-transition", {
-    duration: 0.8,
-    height: "100%",
-    x: "100%",
-    delay: 0.3,
-  });
-
-  timeline.set(".page-transition", {
-    x: "-100%",
-  });
+  timeline.set(".loading-screen", { left: "-100%" });
 };
 
-mainAnimation = () => {
+contentAnimation = () => {
   var timeline = gsap.timeline();
 
   timeline.from(".all", {
-    duration: 1,
+    duration: 0.5,
     y: 30,
     opacity: 0,
     stagger: {
       amount: 0.4,
     },
-    delay: 0.8,
+    delay: 0.2,
   });
 };
+
 /* delays the animation */
 delay = (n) => {
   n = n || 2000;
@@ -51,15 +47,15 @@ barba.init({
     {
       async leave(data) {
         const done = this.async();
-        PageTransition();
+        pageTransition();
         await delay(1000);
         done();
       },
       async enter(data) {
-        mainAnimation();
+        contentAnimation();
       },
       async once(data) {
-        mainAnimation();
+        contentAnimation();
       },
     },
   ],
