@@ -8,24 +8,24 @@ PageTransition = () => {
   timeline.to(".page-transition", {
     duration: 1,
     height: "100%",
-    top: "0%",
+    x: "0%",
   });
   timeline.to(".page-transition", {
     duration: 0.8,
     height: "100%",
-    top: "100%",
+    x: "100%",
     delay: 0.3,
   });
 
   timeline.set(".page-transition", {
-    top: "-100%",
+    x: "-100%",
   });
 };
 
 mainAnimation = () => {
   var timeline = gsap.timeline();
 
-  timeline.from(".container h1, .menu-items li, .logo", {
+  timeline.from(".all", {
     duration: 1,
     y: 30,
     opacity: 0,
