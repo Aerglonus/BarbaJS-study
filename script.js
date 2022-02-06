@@ -10,7 +10,6 @@ pageTransition = () => {
     duration: 0.5,
     width: "100%",
     left: "100%",
-
     delay: 0.5,
   });
 
