@@ -46,17 +46,18 @@ body {
 .button a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
-    color: #131213;
-    background-color: aliceblue;
+    color: aliceblue;
+    background-color: #131213;
     padding: 24px 40px;
     letter-spacing: 4px;
     font-size: 10px;
     font-weight: bold;
+    border: 1px solid white;
 }
 
 .button:hover a {
-    background-color: #131213;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: #131213;
     border: 1px solid white;
 }
 .container {
