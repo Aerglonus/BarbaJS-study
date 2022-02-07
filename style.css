@@ -4,7 +4,7 @@
 }
 html,
 body {
-    background-color: #131213;
+    background-color: #131213 ;
     color: white;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #5b21b6;
+    background-color: #ffffff  ;
     width: 0%;
     height: 100%;
 }
@@ -67,11 +67,49 @@ h1{
     border: 1px solid white;
 }
 .container {
-    position: absolute;
+    position: relative;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
+}
+.toppanel{
+    height: 100vh;
+    background-color: #131213  ;
+}
+.bottompanel{
+    height: 100vh;
+    background-color: #4f46e5;
+}
+
+.button1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button1 a {
+     font-family: Iosevka SS01 Medium;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #131213;
+    padding: 24px 40px;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.button1:hover a {
+    background-color: aliceblue;
+    color: #131213;
+    border: 1px solid white;
+}
+
+.bottompanel2{
+    height: 100vh;
+    background-color: #6d28d9;
 }
