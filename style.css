@@ -2,9 +2,10 @@
     font-family: Iosevka SS01 Medium;
     src: url(/font/iosevka-ss01-medium.ttf);
 }
+
 html,
 body {
-    background-color: #131213 ;
+    background-color: #131213;
     color: white;
     margin: 0;
     padding: 0;
@@ -15,9 +16,13 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #ffffff  ;
+    background-color: #ffffff;
     width: 0%;
     height: 100%;
+}
+
+.load-container.from-left {
+    flex-direction: column;
 }
 
 .load-container {
@@ -29,10 +34,13 @@ body {
     overflow: hidden;
     z-index: 10;
     pointer-events: none;
+    display: flex;
 }
-h1{
-     font-family: Iosevka SS01 Medium;
+
+h1 {
+    font-family: Iosevka SS01 Medium;
 }
+
 /* .title {
     position: absolute;
     top: 38%;
@@ -50,7 +58,7 @@ h1{
 }
 
 .button a {
-     font-family: Iosevka SS01 Medium;
+    font-family: Iosevka SS01 Medium;
     text-decoration: none;
     color: aliceblue;
     background-color: #131213;
@@ -66,6 +74,7 @@ h1{
     color: #131213;
     border: 1px solid white;
 }
+
 .container {
     position: relative;
     top: 0;
@@ -75,11 +84,13 @@ h1{
     height: 100vh;
     width: 100%;
 }
-.toppanel{
+
+.toppanel {
     height: 100vh;
-    background-color: #131213  ;
+    background-color: #131213;
 }
-.bottompanel{
+
+.bottompanel {
     height: 100vh;
     background-color: #4f46e5;
 }
@@ -92,7 +103,7 @@ h1{
 }
 
 .button1 a {
-     font-family: Iosevka SS01 Medium;
+    font-family: Iosevka SS01 Medium;
     text-decoration: none;
     color: aliceblue;
     background-color: #131213;
@@ -109,7 +120,35 @@ h1{
     border: 1px solid white;
 }
 
-.bottompanel2{
+.bottompanel2 {
     height: 100vh;
     background-color: #6d28d9;
+}
+
+/* transition animation CSS*/
+.transition-container {
+    position: fixed;
+    left: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.transition-container span {
+    position: relative;
+}
+
+.transition-container.from-left {
+    flex-direction: column;
+}
+
+/* IT GIVES THE SPANS A BACKGROUND COLOR*/
+.transition-container.from-left span {
+    background: rgb(240, 240, 240);
+    height: 100%;
+    width: 0%;
+
 }

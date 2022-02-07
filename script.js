@@ -1,19 +1,21 @@
-/* Animates the container that covers the screen using GSAP */
+/* Animates the container  and the spans that covers the screen using GSAP */
 pageTransition = () => {
   var timeline = gsap.timeline();
-  timeline.to(".loading-screen", {
+  timeline.to(".from-left .tile", {
     duration: 0.5,
     width: "100%",
     left: "0%",
+    stagger: 0.05,
   });
-  timeline.to(".loading-screen", {
+  timeline.to(".from-left .tile", {
     duration: 0.5,
     width: "100%",
     left: "100%",
     delay: 0.2,
+    stagger: -0.05,
   });
 
-  timeline.set(".loading-screen", { left: "-100%" });
+  timeline.set(".from-left .tile", { left: "-100%" });
 };
 /* Animation for the content on a scrollable page */
 contentAnimation = () => {
