@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Page Transition Using BarbaJS & GSAP</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body data-barba="wrapper">
@@ -19,26 +20,40 @@
 
     <main data-barba="container" data-barba-namespace="home-section">
         <div class="toppanel">
-            <div class="container ">
-                <h1 class="logo1 ">
-                    HOME PAGE
+            <!-- <iframe src='https://my.spline.design/dave-f0fb0a062f8762c8658922293c0a77e7/'
+                style="position: absolute; display: flex;left: 0; top: 0; bottom: 0; right:0; width:100%; height:100%; border:none; margin:0;  "
+                class="davenft"></iframe> -->
+            <video playsinline autoplay loop poster="" id="bgvideo" width="x" height="y">
+                <source src="davenobg.webm" type="video/mp4">
+                </source>
+            </video>
+            <div class="container " style="display: flex; align-items: center; flex-direction: row;">
+                <h1 class=" logo1 ">
+                    HI BIN
                 </h1>
-                <div class=" button1 buttonleave">
-                    <a href="contact.html" onclick="scrollFunction1()">GO TO CONTACT</a>
+                <div class=" button1 ">
+                    <h1>scroll down</h1>
                 </div>
             </div>
         </div>
 
         <div class="bottompanel">
-            <div class="container ">
+            <div class="container " style="display: flex; align-items: center; flex-direction: row;">
                 <h1 class="logo">
-                    HOME PAGE
+                    I HAVE SOMETHING STUPID TO SAY
                 </h1>
-                <div class=" button">
-                    <a href="contact.html" onclick="scrollFunction1()">GO TO CONTACT</a>
+
+                <div class=" button"
+                    style="display: flex; align-items: center; flex-direction: row; text-align: justify;">
+                    <a href="https://maps.google.com" onclick="webhook()">Open Google Maps and go to this address: "57
+                        Jefferson Av. Toronto ON M6K 1Y3, Canada" and zoom in the
+                        Gift shop right in the corner of the street
+                    </a>
                 </div>
             </div>
         </div>
+
+
     </main>
 </body>
 

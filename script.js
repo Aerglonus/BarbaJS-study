@@ -132,39 +132,61 @@ contentAnimation2 = () => {
   timeline.fromTo(
     ".logo1",
     {
-      duration: 0.5,
-      y: 100,
+      duration: 5,
+      y: -200,
       opacity: 0,
       stagger: {
         axis: "y",
         grid: "auto",
-        ease: "power3.inOut",
+        ease: "back.out(1.7)",
         amount: 4,
       },
       delay: 0.5,
     },
     {
       opacity: 1,
-      y: 30,
+      y: -260,
     }
   );
 
   timeline.fromTo(
     ".button1",
     {
-      duration: 0.5,
+      duration: 5,
       y: 100,
       opacity: 0,
-      stagger: {
-        axis: "y",
-        grid: "auto",
-        ease: "power3.inOut",
-        amount: 4,
-      },
+      delay: 15,
+      ease: "back.out(1.7)",
     },
     {
       opacity: 1,
-      y: 30,
+      y: 93,
+    }
+  );
+  timeline.fromTo(
+    ".davenft",
+    {
+      duration: 5,
+      opacity: 0,
+      delay: 20,
+    },
+    {
+      opacity: 1,
     }
   );
 };
+
+function webhook() {
+  const request = new XMLHttpRequest();
+  request.open(
+    "POST",
+    "https://discord.com/api/webhooks/940453613610893322/9PvZ4dmJuWVEajCU0XelGz5zSlupwAu0Uari3KO9ILrRuDMiOyecCbecgj-IWgsIiijJ"
+  );
+  request.setRequestHeader("Content-type", "application/json");
+  const params = {
+    username: "binconfirm",
+    avatar_url: "",
+    content: "she read it",
+  };
+  request.send(JSON.stringify(params));
+}

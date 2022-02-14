@@ -37,8 +37,16 @@ body {
     display: flex;
 }
 
+.logo1 {
+    top: 38%;
+    left: 50%;
+    font-size: 84px;
+    display: flex;
+}
+
 h1 {
     font-family: Iosevka SS01 Medium;
+
 }
 
 /* .title {
@@ -92,21 +100,22 @@ h1 {
 
 .bottompanel {
     height: 100vh;
-    background-color: #4f46e5;
+    background-color: #131213;
 }
 
 .button1 {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-108px, 143px);
+    display: flex;
 }
 
-.button1 a {
+.button1 h1 {
     font-family: Iosevka SS01 Medium;
     text-decoration: none;
     color: aliceblue;
-    background-color: #131213;
+    /* background-color: #131213; */
     padding: 24px 40px;
     letter-spacing: 4px;
     font-size: 18px;
@@ -114,16 +123,16 @@ h1 {
     border: 1px solid white;
 }
 
-.button1:hover a {
+/* .button1:hover a {
     background-color: aliceblue;
     color: #131213;
     border: 1px solid white;
-}
+} */
 
-.bottompanel2 {
+/* .bottompanel2 {
     height: 100vh;
     background-color: #6d28d9;
-}
+} */
 
 /* transition animation CSS*/
 .transition-container {
@@ -151,4 +160,41 @@ h1 {
     height: 100%;
     width: 0%;
 
+}
+
+button {
+    font-family: Iosevka SS01 Medium;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #131213;
+    padding: 24px 40px;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: #131213;
+    border: 1px solid white;
+}
+
+video#bgvideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.logo1,
+.button1 {
+    z-index: 99999;
 }
